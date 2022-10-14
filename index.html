@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container container_bg">
+
+        <div class="block">
+            <header>
+                <div class="header_left_side">
+                    <div class="header_title">Dashboard</div>
+                    <button class="header_create">Добавить задачу</button>
+                </div>
+                <input class="header_search" type="text" placeholder="Поиск по задачам">
+            </header>
+
+            <div class="show">
+                <h1 class="show_title">Показать задачи как:</h1>
+                <button class="show_table">Таблица</button>
+                <button class="show_plate">Плитка</button>
+            </div>
+
+            <div class="main_header">
+                <div class="main_header_title">Заголовок задачи</div>
+                <div class="main_header_description">Описание задачи</div>
+                <div class="main_header_date">Дата</div>
+                <div class="main_header_time">Время</div>
+                <div class="main_header_is_done">Выполнено</div>
+            </div>
+
+            <div class="for_tables"></div>
+
+
+            <div class="wrap">
+                <div class="main_plate">
+                    <div class="main_plate_title">Переписать проект на Vue 3</div>
+                    <div class="main_plate_description">Quia et suscipit\nsuscipit recusandae consequuntur expedita et
+                        cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet
+                        architecto</div>
+                    <div class="main_plate_time">
+                        <div class="main_plate_time_date">21.10.21</div>
+                        <div class="main_plate_time_hour">14:31</div>
+                    </div>
+                    <div class="main_plate_is_done">Не выполнено</div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="modal_bg"></div>
+        <div class="modal">
+ 
+            <form name="login">
+                <h1 class="login_title">Добавить</h1>
+                <input type="text" name="title" placeholder="Заголовок" class="main_input"><br>
+                <input type="text" name="info" placeholder="Описание" class="main_input"><br>
+                <input type="time" name="time" placeholder="Время" class="main_input"><br>
+                <input type="date" name="data" placeholder="Время" class="main_input"><br>
+
+                <select class="select" name="ready">
+                    <option class="option" value="В прогрессе">В прогрессе</option>
+                    <option class="option" selected value="Не выполнено">Не выполнено</option>
+                    <option class="option" value="Готово">Готово</option>
+                </select>
+
+                <br>
+
+                <button class="save">Сохранить</button>
+                <!-- <button class="delete">Удалить</button> -->
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
